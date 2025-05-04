@@ -1,0 +1,10 @@
+name = "KAM Advanced Pharma"
+author = "Draakje10"
+prefix = "kap"
+mainprefix = "z"
+[version]
+major = 1
+minor = 0
+patch = 0
+build = 0
+git_hash = 0
