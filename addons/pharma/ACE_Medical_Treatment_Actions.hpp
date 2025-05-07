@@ -5,6 +5,7 @@ class ACE_Medical_Treatment_Actions
     class CanGummies: CWMP {
         displayName = "Cannabis Gummies";
         items[] = {"kap_CanGummies"};
-        callbackSuccess = "kap_pharma\functions\fnc_treatmentAdvanced_CanGummies.sqf";
+        callbackSuccess = "pharma_fnc_CanGummies";
+        treatmentTime = 2;
     };
 };

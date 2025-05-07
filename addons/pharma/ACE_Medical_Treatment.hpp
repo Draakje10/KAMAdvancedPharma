@@ -1,4 +1,4 @@
-class ACE_ADDON(Medical_Treatment) {
+class ACE_Medical_Treatment {
     class Medication  {
         // How much does the pain get reduced?
         painReduce = 0;

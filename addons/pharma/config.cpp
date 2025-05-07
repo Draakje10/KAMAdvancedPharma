@@ -4,12 +4,12 @@ class CfgPatches {
     class Pharma {
         name = "Pharma";
         author = "Draakje10";
-        weapons[] = {
-            "kap_CanGummies",
-        };
+        weapons[] = {};
+        units[] = {};
         requiredAddons[] = {
             "kat_main",
             "kat_pharma",
+            "kat_vitals",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -27,8 +27,9 @@ class CfgPatches {
     };
 };
 
-// #include "CfgEventHandlers.hpp"
+
 #include "CfgMagazines.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgMedicationEffects.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"

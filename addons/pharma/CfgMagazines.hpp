@@ -9,10 +9,8 @@ class CfgMagazines
         scope = 2;
 
         displayName = "Cannabis Gummies";
-        descriptionShort = "Cannabis Gummies<br/>A sweet treat for a sweet high.";
+        descriptionShort = "";
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        picture = "\A3\Structures_F_EPA\Items\Medical\Data\UI\icon_painkillers_ca.paa";
-
         ammo = "";
         count = 6;
         initSpeed = 0;

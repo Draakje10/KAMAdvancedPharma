@@ -1,10 +1,16 @@
-class CfgFunctions {
-    class overwrite_medicalTreatment {
-        tag = "ace_medical_treatment";
-        class ace_medical_treatment {
-            class medicationLocal {
-                file = "kap_pharma\functions\fnc_medicationLocal.sqf";
-            };
+class CfgFunctions
+{
+    class pharma
+    {
+        class effects {
+            file = "kap_pharma\functions";
+            class applyMedication {};
+            class CanGummies {};
+        };
+        class init {
+            file = "kap_pharma\functions";
+            class medicationInit { postInit = 1; };
         };
     };
+    
 };
