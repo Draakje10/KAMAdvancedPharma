@@ -1,5 +1,6 @@
 class ACE_Medical_Treatment {
     class Medication  {
+
         // How much does the pain get reduced?
         painReduce = 0;
         // How much will the heart rate be increased when the HR is low (below 55)? {minIncrease, maxIncrease}
@@ -38,12 +39,14 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {5, 10};
             timeInSystem = 360;
             timeTillMaxEffect = 45;
-            maxDose = 6;
-            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = -5;
-            onOverDose = "";
             maxRelief = 0.5;
+            maxDose = 3;
+            maxDoseDeviation = 2;
+            dose = 1;
+            onOverDose = "";
+            opioidEffect = 0.5;
         };
     };
 };

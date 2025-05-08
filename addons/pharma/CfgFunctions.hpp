@@ -7,10 +7,6 @@ class CfgFunctions
             class applyMedication {};
             class CanGummies {};
         };
-        class init {
-            file = "kap_pharma\functions";
-            class medicationInit { postInit = 1; };
-        };
     };
     
 };

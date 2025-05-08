@@ -30,6 +30,5 @@ class CfgPatches {
 
 #include "CfgMagazines.hpp"
 #include "CfgFunctions.hpp"
-#include "CfgMedicationEffects.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"

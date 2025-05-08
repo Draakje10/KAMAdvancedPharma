@@ -24,15 +24,12 @@ private _maxRelief        = getNumber (_cfg >> "maxRelief");
 private _opioidRelief     = getNumber (_cfg >> "opioidRelief");
 private _opioidEffect     = getNumber (_cfg >> "opioidEffect");
 private _overdoseFunc     = getText (_cfg >> "onOverDose");
-
+private _incompatibleMedication = getArray (_cfg >> "incompatibleMedication");
 
 private _heartRate = _patient getVariable [VAR_HEART_RATE, 80];
-diag_log format ["applyMedication: heart rate %1", _heartRate];
 private _hrIncrease = [_hrLow, _hrNormal, _hrHigh] select (floor ((0 max _heartRate min 110) / 55));
 _hrIncrease params ["_minIncrease", "_maxIncrease"];
-diag_log format ["applyMedication: heart rate increase %1", _hrIncrease];
 private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);
-diag_log format ["applyMedication: heart rate change %1", _heartRateChange];
 
 private _presentPain = _patient getVariable [VAR_PAIN, 0];
 private _presentReduce = 0;
@@ -50,5 +47,8 @@ _timeTillMax = _timeTillMax max 1;
 private _adjustments = _patient getVariable [VAR_MEDICATIONS, []];
 
 _adjustments pushBack [_className, CBA_missionTime, _timeTillMax, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect];
-
+//[                     "CanGummies",18.51              ,45             ,360        ,6.0932          ,0.2            ,-5,            0,         0,           0,          0.1],
+//[                     "Morphine"  ,43.014             ,30             ,900        ,-10.9898        ,0.8            ,-10,           1,         0,           0.          1,0]]
 _patient setVariable [VAR_MEDICATIONS, _adjustments, true];
+
+[_patient, _className, _incompatibleMedication] call ace_medical_treatment_fnc_onMedicationUsage;
