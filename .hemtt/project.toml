@@ -2,9 +2,16 @@ name = "KAM Advanced Pharma"
 author = "Draakje10"
 prefix = "kap"
 mainprefix = "z"
+[files]
+include = [
+    "mod.cpp",
+    "KAPLogoLowRes.paa",
+    "KAPLogoHighRes.paa",
+]
+
 [version]
-major = 1
-minor = 0
-patch = 0
-build = 0
-git_hash = 0
+major = 0 # refers to the version of the mod in terms of major features, new major features make this number go up
+minor = 1 # refers to the version of the mod in terms of whole features, new features make this number go up
+patch = 7 # refers to the version of the mod in terms of commits to make the version work
+build = 41 # how many times the mod has been built since the last minor 
+git_hash = 4 # the hash of the last commit to the mod

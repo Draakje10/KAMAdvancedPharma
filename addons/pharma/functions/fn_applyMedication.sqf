@@ -47,8 +47,7 @@ _timeTillMax = _timeTillMax max 1;
 private _adjustments = _patient getVariable [VAR_MEDICATIONS, []];
 
 _adjustments pushBack [_className, CBA_missionTime, _timeTillMax, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect];
-//[                     "CanGummies",18.51              ,45             ,360        ,6.0932          ,0.2            ,-5,            0,         0,           0,          0.1],
-//[                     "Morphine"  ,43.014             ,30             ,900        ,-10.9898        ,0.8            ,-10,           1,         0,           0.          1,0]]
+
 _patient setVariable [VAR_MEDICATIONS, _adjustments, true];
 
 [_patient, _className, _incompatibleMedication] call ace_medical_treatment_fnc_onMedicationUsage;
