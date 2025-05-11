@@ -17,5 +17,22 @@ class ACE_Medical_Treatment {
             dose = 1;
             onOverDose = "";
         };
+
+        class Cyanide
+        {
+            painReduce = 0;
+            hrIncreaseLow[] = {-80, -180};
+            hrIncreaseNormal[] = {-80, -180};
+            hrIncreaseHigh[] = {-80, -180};
+            timeInSystem = 360;
+            timeTillMaxEffect = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = -100;
+            maxRelief = 0.5;
+            maxDose = 1;
+            maxDoseDeviation = 1;
+            dose = 5;
+            onOverDose = "";
+        };
     };
 };

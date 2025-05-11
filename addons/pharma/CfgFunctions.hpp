@@ -6,6 +6,7 @@ class CfgFunctions
             file = "kap_pharma\functions";
             class applyMedication {};
             class CanGummies {};
+            class Cyanide {};
         };
     };
     
