@@ -7,6 +7,7 @@ class CfgPatches {
         weapons[] = {};
         units[] = {};
         requiredAddons[] = {
+            "cba_settings",
             "kat_main",
             "kat_pharma",
             "kat_vitals",
@@ -21,12 +22,16 @@ class CfgPatches {
             "ace_medical_status",
             "ace_medical_treatment",
             "ace_medical_vitals",
-            "ace_dogtags",
-            "cba_settings"
+            "ace_dogtags"
         };
     };
 };
 
+class Extended_PreInit_EventHandlers {
+    class Pharma_preInit {
+        init = "call compile preprocessFileLineNumbers '\kap_pharma\XEH_preInit.sqf'";
+    };
+};
 
 #include "CfgMagazines.hpp"
 #include "CfgFunctions.hpp"
