@@ -11,7 +11,7 @@ class CfgMagazines
         displayName = "Cannabis Gummies";
         descriptionShort = "";
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        picture = "\kap_pharma\models\icons\pillbottle.paa";
+        picture = "\kap_pharma\models\icons\cangummies.paa";
         ammo = "";
         count = 6;
         initSpeed = 0;
