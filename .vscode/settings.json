@@ -1,0 +1,42 @@
+{
+    "saveEditorLayout.list": [
+        {
+            "name": "Default layout",
+            "documents": [
+                {
+                    "fsPath": "e:\\github\\KAMAdvancedPharma\\.hemtt\\launch.toml",
+                    "column": 1,
+                    "pinned": false
+                },
+                {
+                    "fsPath": "e:\\github\\KAMAdvancedPharma\\.hemtt\\project.toml",
+                    "column": 1,
+                    "pinned": false
+                },
+                {
+                    "fsPath": "c:\\Users\\Admin\\AppData\\Local\\Temp\\0daa5d90-343d-4b9a-aa26-4005eed644c7_kap-latest.zip.4c7\\@kap\\mod.cpp",
+                    "column": 1,
+                    "pinned": false
+                },
+                {
+                    "fsPath": "e:\\github\\KAMAdvancedPharma\\addons\\pharma\\ACE_Medical_Treatment.hpp",
+                    "column": 1,
+                    "pinned": false
+                },
+                {
+                    "fsPath": "e:\\github\\KAMAdvancedPharma\\addons\\pharma\\CfgMagazines.hpp",
+                    "column": 1,
+                    "pinned": false
+                }
+            ],
+            "layout": {
+                "orientation": 0,
+                "groups": [
+                    {
+                        "size": 2167
+                    }
+                ]
+            }
+        }
+    ]
+}
