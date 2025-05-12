@@ -16,10 +16,11 @@ class ACE_Medical_Treatment_Actions
 
     class Cyanide: CWMP {
         displayName = "Cyanide";
+        condition = "kap_pharma_enable_cyanide";
         items[] = {"kap_Cyanide"};
         callbackSuccess = "pharma_fnc_Cyanide";
-        treatmentTime = 1;
-        medicRequired = 0;
+        treatmentTime = "kap_pharma_treatment_time_cyanide";
+        medicRequired = "kap_pharma_treatment_level_cyanide";
     };
     
 };

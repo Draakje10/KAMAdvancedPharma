@@ -4,7 +4,7 @@
     "kap_pharma_enable_cannabis_gummies",
     "CHECKBOX",
     ["Enable Cannabis Gummies",
-    "Not implemented yet, will be implemented soon."],
+    "Turns of usage of Cannabis Gummies."],
     "KAP - Pharma",
     [true, false],
     1,
@@ -39,9 +39,9 @@
     "kap_pharma_enable_Cyanide",
     "CHECKBOX",
     ["Enable Cyanide",
-    "Not implemented yet, will be implemented soon."],
+    "Turns of usage of Cyanide."],
     "KAP - Pharma",
-    [true, false],
+    [false, true],
     1,
     {}
 ] call CBA_fnc_addSetting;
@@ -52,7 +52,7 @@
     ["Cyanide Treatment Time", 
     "Set the treatment time for using Cyanide (in seconds)."],
     "KAP - Pharma",
-    [0.1, 10, 2, 1],
+    [0.1, 10, 5, 1],
     1,
     {}
 ] call CBA_fnc_addSetting;
@@ -63,7 +63,18 @@
     ["Cyanide Treatment Level",
     "Set the treatment level for using Cyanide."],
     "KAP - Pharma",
-    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 0],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 2],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_kill_time_Cyanide",
+    "SLIDER",
+    ["Cyanide Kill Time", 
+    "Set the kill time for using Cyanide (in seconds)."],
+    "KAP - Pharma",
+    [1, 600, 120, 0],
     1,
     {}
 ] call CBA_fnc_addSetting;

@@ -7,7 +7,7 @@ class ACE_Medical_Treatment {
             hrIncreaseLow[] = {0, -5};
             hrIncreaseNormal[] = {0, -5};
             hrIncreaseHigh[] = {0, -5};
-            timeInSystem = 360;
+            timeInSystem = 600;
             timeTillMaxEffect = 45;
             incompatibleMedication[] = {};
             viscosityChange = -5;
