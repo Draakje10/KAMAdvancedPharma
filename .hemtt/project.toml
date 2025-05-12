@@ -12,6 +12,6 @@ include = [
 [version]
 major = 0 # refers to the version of the mod in terms of major features, new major features make this number go up
 minor = 2 # refers to the version of the mod in terms of whole features, new features make this number go up
-patch = 4 # refers to the version of the mod in terms of commits to make the version work
-build = 62 # how many times the mod has been built 
+patch = 5 # refers to the version of the mod in terms of commits to make the version work
+build = 63 # how many times the mod has been built 
 git_hash = 4 # the hash of the last commit to the mod

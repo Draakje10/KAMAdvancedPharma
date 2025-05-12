@@ -5,7 +5,7 @@
     "CHECKBOX",
     ["Enable Cannabis Gummies",
     "Turns of usage of Cannabis Gummies."],
-    "KAP - Pharma",
+    ["KAP - Pharma", "Cannabis Gummies"],
     [true, false],
     1,
     {}
@@ -16,7 +16,7 @@
     "SLIDER",
     ["Cannabis Gummies Treatment Time", 
     "Set the treatment time for using Cannabis Gummies (in seconds)."],
-    "KAP - Pharma",
+    ["KAP - Pharma", "Cannabis Gummies"],
     [0.1, 10, 2, 1],
     1,
     {}
@@ -28,7 +28,7 @@
     "LIST",
     ["Cannabis Gummies Treatment Level",
     "Set the treatment level for using Cannabis Gummies."],
-    "KAP - Pharma",
+    ["KAP - Pharma", "Cannabis Gummies"],
     [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 0],
     1,
     {}
@@ -40,7 +40,7 @@
     "CHECKBOX",
     ["Enable Cyanide",
     "Turns of usage of Cyanide."],
-    "KAP - Pharma",
+    ["KAP - Pharma", "Cyanide"],
     [false, true],
     1,
     {}
@@ -51,7 +51,7 @@
     "SLIDER",
     ["Cyanide Treatment Time", 
     "Set the treatment time for using Cyanide (in seconds)."],
-    "KAP - Pharma",
+    ["KAP - Pharma", "Cyanide"],
     [0.1, 10, 5, 1],
     1,
     {}
@@ -62,7 +62,7 @@
     "LIST",
     ["Cyanide Treatment Level",
     "Set the treatment level for using Cyanide."],
-    "KAP - Pharma",
+    ["KAP - Pharma", "Cyanide"],
     [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 2],
     1,
     {}
@@ -73,7 +73,7 @@
     "SLIDER",
     ["Cyanide Kill Time", 
     "Set the kill time for using Cyanide (in seconds)."],
-    "KAP - Pharma",
+    ["KAP - Pharma", "Cyanide"],
     [1, 600, 120, 0],
     1,
     {}
