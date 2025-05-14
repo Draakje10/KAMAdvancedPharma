@@ -22,5 +22,14 @@ class ACE_Medical_Treatment_Actions
         treatmentTime = "kap_pharma_treatment_time_cyanide";
         medicRequired = "kap_pharma_treatment_level_cyanide";
     };
+
+    class Zagustin: Morphine {
+        displayName = "Zagustin";
+        condition = "kap_pharma_enable_zagustin";
+        items[] = {"kap_Zagustin"};
+        callbackSuccess = "pharma_fnc_Zagustin";
+        treatmentTime = "kap_pharma_treatment_time_zagustin";
+        medicRequired = "kap_pharma_treatment_level_zagustin";
+    };
     
 };

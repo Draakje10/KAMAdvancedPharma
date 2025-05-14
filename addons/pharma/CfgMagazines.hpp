@@ -35,4 +35,22 @@ class CfgMagazines
         ACE_isMedicalItem = 1;
         ace_asItem = 1;
     };
+
+    class kap_Zagustin: CA_Magazine
+    {
+        author = "Draakje10";
+        scope = 2;
+        displayName = "Zagustin";
+        descriptionShort = "";
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        picture = "\kap_pharma\models\icons\zagustin.paa";
+        ammo = "";
+        count = 1;
+        initSpeed = 0;
+        mass = 0.1;
+        ACE_isMedicalItem = 1;
+        ace_asItem = 1;
+    };
+
+    
 };

@@ -34,5 +34,22 @@ class ACE_Medical_Treatment {
             dose = 5;
             onOverDose = "";
         };
+
+        class Zagustin
+        {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {-25, -30};
+            hrIncreaseNormal[] = {-15, -20};
+            hrIncreaseHigh[] = {-40, --55};
+            timeInSystem = 300;
+            timeTillMaxEffect = 15;
+            incompatibleMedication[] = {};
+            viscosityChange = 100;
+            maxRelief = 0.5;
+            maxDose = 4;
+            maxDoseDeviation = 1;
+            dose = 1;
+            onOverDose = "";
+        };
     };
 };

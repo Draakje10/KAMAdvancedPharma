@@ -79,3 +79,36 @@
     {}
 ] call CBA_fnc_addSetting;
 
+[
+    "kap_pharma_enable_zagustin",
+    "CHECKBOX",
+    ["Enable Zagustin",
+    "Turns of usage of Zagustin."],
+    ["KAP - Pharma", "Zagustin"],
+    [false, true],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_time_zagustin",
+    "SLIDER",
+    ["Zagustin Treatment Time", 
+    "Set the treatment time for using Zagustin (in seconds)."],
+    ["KAP - Pharma", "Zagustin"],
+    [0.1, 10, 5, 1],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_level_zagustin",
+    "LIST",
+    ["Zagustin Treatment Level",
+    "Set the treatment level for using Zagustin."],
+    ["KAP - Pharma", "Zagustin"],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 2],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
