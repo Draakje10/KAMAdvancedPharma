@@ -85,7 +85,7 @@
     ["Enable Zagustin",
     "Turns of usage of Zagustin."],
     ["KAP - Pharma", "Zagustin"],
-    [false, true],
+    [true, false],
     1,
     {}
 ] call CBA_fnc_addSetting;
