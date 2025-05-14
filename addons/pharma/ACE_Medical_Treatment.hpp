@@ -40,7 +40,7 @@ class ACE_Medical_Treatment {
             painReduce = 0.0;
             hrIncreaseLow[] = {-25, -30};
             hrIncreaseNormal[] = {-15, -20};
-            hrIncreaseHigh[] = {-40, --55};
+            hrIncreaseHigh[] = {-40, -55};
             timeInSystem = 300;
             timeTillMaxEffect = 15;
             incompatibleMedication[] = {};

@@ -7,6 +7,7 @@ class CfgFunctions
             class applyMedication {};
             class CanGummies {};
             class Cyanide {};
+            class Zagustin {};	
         };
     };
     
