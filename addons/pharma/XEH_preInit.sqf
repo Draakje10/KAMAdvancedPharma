@@ -112,5 +112,46 @@
     {}
 ] call CBA_fnc_addSetting;
 
+[
+    "kap_pharma_enable_meth",
+    "CHECKBOX",
+    ["Enable Meth",
+    "Turns of usage of Meth."],
+    ["KAP - Pharma", "Meth"],
+    [true, false],
+    1,
+    {}
+] call CBA_fnc_addSetting;
 
+[
+    "kap_pharma_treatment_time_meth",
+    "SLIDER",
+    ["Meth Treatment Time", 
+    "Set the treatment time for using Meth (in seconds)."],
+    ["KAP - Pharma", "Meth"],
+    [0.1, 10, 5, 1],
+    1,
+    {}
+] call CBA_fnc_addSetting;
 
+[
+    "kap_pharma_treatment_level_meth",
+    "LIST",
+    ["Zagustin Treatment Level",
+    "Set the treatment level for using Zagustin."],
+    ["KAP - Pharma", "Meth"],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 2],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_meth_time_in_body",
+    "SLIDER",
+    ["Meth time in body",
+    "Set time in body after using Meth (in seconds)."],
+    ["KAP - Pharma", "Meth"],
+    [1, 2400, 600, 0],
+    1,
+    {}
+] call CBA_fnc_addSetting;

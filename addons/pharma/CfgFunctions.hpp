@@ -8,6 +8,7 @@ class CfgFunctions
             class CanGummies {};
             class Cyanide {};
             class Zagustin {};	
+            class Meth {};
         };
     };
     

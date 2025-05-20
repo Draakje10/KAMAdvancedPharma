@@ -52,5 +52,21 @@ class CfgMagazines
         ace_asItem = 1;
     };
 
+    class kap_Meth: CA_Magazine
+    {
+        author = "Draakje10";
+        scope = 2;
+        displayName = "Meth";
+        descriptionShort = "";
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        picture = "\kap_pharma\models\icons\meth.paa";
+        ammo = "";
+        count = 1;
+        initSpeed = 0;
+        mass = 0.1;
+        ACE_isMedicalItem = 1;
+        ace_asItem = 1;
+    };
+
     
 };

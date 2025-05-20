@@ -50,5 +50,22 @@ class ACE_Medical_Treatment {
             dose = 1;
             onOverDose = "";
         };
+
+        class Meth
+        {
+            painReduce = 1;
+            hrIncreaseLow[] = {0, 10};
+            hrIncreaseNormal[] = {10, 20};
+            hrIncreaseHigh[] = {20, 30};
+            timeInSystem = "kap_pharma_meth_time_in_body";
+            timeTillMaxEffect = 20;
+            incompatibleMedication[] = {};
+            viscosityChange = 5;
+            maxRelief = 1;
+            maxDose = 1;
+            maxDoseDeviation = 1;
+            dose = 1;
+            onOverDose = "";
+        };
     };
 };
