@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions
     class CWMP;
 
     class CanGummies: CWMP {
-        displayName = "Cannabis Gummies";
+        displayName = "take Cannabis Gummies";
         displayNameProgress = "Taking Cannabis Gummies";
         condition = "kap_pharma_enable_cannabis_gummies";
         items[] = {"kap_CanGummies"};
@@ -18,7 +18,7 @@ class ACE_Medical_Treatment_Actions
     };
 
     class Cyanide: CWMP {
-        displayName = "Cyanide";
+        displayName = "take Cyanide";
         displayNameProgress = "Taking Cyanide";
         condition = "kap_pharma_enable_cyanide";
         items[] = {"kap_Cyanide"};
@@ -28,13 +28,23 @@ class ACE_Medical_Treatment_Actions
     };
 
     class Zagustin: Morphine {
-        displayName = "Zagustin";
+        displayName = "inject Zagustin";
         displayNameProgress = "Injecting Zagustin";
         condition = "kap_pharma_enable_zagustin";
         items[] = {"kap_Zagustin"};
         callbackSuccess = "pharma_fnc_Zagustin";
         treatmentTime = "kap_pharma_treatment_time_zagustin";
         medicRequired = "kap_pharma_treatment_level_zagustin";
+    };
+
+    class Meth: CWMP {
+        displayName = "snort Meth";
+        displayNameProgress = "Snorting Meth";
+        condition = "kap_pharma_enable_meth";
+        items[] = {"kap_Meth"};
+        callbackSuccess = "pharma_fnc_Meth";
+        treatmentTime = "kap_pharma_treatment_time_meth";
+        medicRequired = "kap_pharma_treatment_level_meth";
     };
     
 };
