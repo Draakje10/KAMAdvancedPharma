@@ -10,26 +10,20 @@ _currentPain = _patient getVariable "ACE_medical_pain";
 
 _timeInBody = ["kap_pharma_meth_time_in_body"] call CBA_settings_fnc_get;
 
-[_patient, _currentPain, _timeInBody] spawn {
-    params ["_patient", "_oldPain", "_timeInBody"];
-    
-
-    sleep _timeInBody - (_timeInBody * 0.1);
-    _halfPain = _oldPain / 2;
-    [_patient, _halfPain] call ace_medical_fnc_adjustPainLevel;
-    sleep _timeInBody * 0.1;
-    [_patient, _oldPain] call ace_medical_fnc_adjustPainLevel;
-};
-
-[_patient, _timeInBody] spawn {
-    params ["_patient", "_timeInBody"];
+[_patient, _timeInBody, _currentPain] spawn {
+    params ["_patient", "_timeInBody", "_oldPain"];
 
     private _startTime = time;
     while { time - _startTime < _timeInBody } do {
+        diag_log format ["Kap Pharma: Meth - Time left: %1 seconds", _timeInBody - (time - _startTime)];
         private _currentPain = _patient getVariable "ACE_medical_pain";
         if (_currentPain > 0) then {
             [_patient, -1] call ace_medical_fnc_adjustPainLevel;
         };
         sleep 1;
     };
+    [_patient, _oldPain / 2] call ace_medical_fnc_adjustPainLevel;
+    sleep 10;
+    [_patient, _oldPain] call ace_medical_fnc_adjustPainLevel;
+
 };

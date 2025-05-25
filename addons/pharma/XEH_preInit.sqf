@@ -79,6 +79,7 @@
     {}
 ] call CBA_fnc_addSetting;
 
+// Add settings for Zagustin
 [
     "kap_pharma_enable_zagustin",
     "CHECKBOX",
@@ -107,11 +108,12 @@
     ["Zagustin Treatment Level",
     "Set the treatment level for using Zagustin."],
     ["KAP - Pharma", "Zagustin"],
-    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 2],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 1],
     1,
     {}
 ] call CBA_fnc_addSetting;
 
+// Add settings for Meth
 [
     "kap_pharma_enable_meth",
     "CHECKBOX",
@@ -140,7 +142,7 @@
     ["Zagustin Treatment Level",
     "Set the treatment level for using Zagustin."],
     ["KAP - Pharma", "Meth"],
-    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 2],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 1],
     1,
     {}
 ] call CBA_fnc_addSetting;
