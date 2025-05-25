@@ -15,7 +15,6 @@ _timeInBody = ["kap_pharma_meth_time_in_body"] call CBA_settings_fnc_get;
 
     private _startTime = time;
     while { time - _startTime < _timeInBody } do {
-        diag_log format ["Kap Pharma: Meth - Time left: %1 seconds", _timeInBody - (time - _startTime)];
         private _currentPain = _patient getVariable "ACE_medical_pain";
         if (_currentPain > 0) then {
             [_patient, -1] call ace_medical_fnc_adjustPainLevel;
