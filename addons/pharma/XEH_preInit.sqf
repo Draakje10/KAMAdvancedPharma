@@ -139,7 +139,7 @@
 [
     "kap_pharma_treatment_level_meth",
     "LIST",
-    ["Zagustin Treatment Level",
+    ["Meth Treatment Level",
     "Set the treatment level for using Zagustin."],
     ["KAP - Pharma", "Meth"],
     [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 1],
