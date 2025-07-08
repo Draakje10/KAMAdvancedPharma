@@ -1,7 +1,7 @@
 class ACE_Medical_Treatment {
     class Medication  {
 
-        class CanGummies
+        class KAP_CanGummies
         {
             painReduce = 0.3;
             hrIncreaseLow[] = {0, -5};
@@ -16,9 +16,10 @@ class ACE_Medical_Treatment {
             maxDoseDeviation = 5;
             dose = 1;
             onOverDose = "";
+            opioidEffect = 0.07;
         };
 
-        class Cyanide
+        class KAP_Cyanide
         {
             painReduce = 0;
             hrIncreaseLow[] = {-80, -180};
@@ -35,7 +36,7 @@ class ACE_Medical_Treatment {
             onOverDose = "";
         };
 
-        class Zagustin
+        class KAP_Zagustin
         {
             painReduce = 0.0;
             hrIncreaseLow[] = {-25, -30};
@@ -49,9 +50,10 @@ class ACE_Medical_Treatment {
             maxDoseDeviation = 1;
             dose = 1;
             onOverDose = "";
+            opioidEffect = 0.17;
         };
 
-        class Meth
+        class KAP_Meth
         {
             painReduce = 1;
             hrIncreaseLow[] = {0, 10};
@@ -66,6 +68,7 @@ class ACE_Medical_Treatment {
             maxDoseDeviation = 1;
             dose = 1;
             onOverDose = "";
+            opioidEffect = 0.17;
         };
     };
 };

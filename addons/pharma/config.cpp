@@ -33,6 +33,7 @@ class Extended_PreInit_EventHandlers {
     };
 };
 
+#include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgFunctions.hpp"
 #include "ACE_Medical_Treatment.hpp"

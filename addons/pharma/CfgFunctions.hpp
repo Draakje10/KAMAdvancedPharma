@@ -4,11 +4,10 @@ class CfgFunctions
     {
         class effects {
             file = "kap_pharma\functions";
-            class applyMedication {};
-            class CanGummies {};
-            class Cyanide {};
-            class Zagustin {};	
-            class Meth {};
+            class KAP_CanGummies {};
+            class KAP_Cyanide {};
+            class KAP_Zagustin {};	
+            class KAP_Meth {};
         };
     };
     
