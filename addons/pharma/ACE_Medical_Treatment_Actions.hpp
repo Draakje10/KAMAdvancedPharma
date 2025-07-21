@@ -46,5 +46,25 @@ class ACE_Medical_Treatment_Actions
         treatmentTime = "kap_pharma_treatment_time_meth";
         medicRequired = "kap_pharma_treatment_level_meth";
     };
+
+    class KAP_Vicodin: CWMP {
+        displayName = "take Vicodin";
+        displayNameProgress = "Taking Vicodin";
+        condition = "kap_pharma_enable_vicodin";
+        items[] = {"kap_Vicodin"};
+        callbackSuccess = "pharma_fnc_KAP_Vicodin";
+        treatmentTime = "kap_pharma_treatment_time_vicodin";
+        medicRequired = "kap_pharma_treatment_level_vicodin";
+    };
+
+    class KAP_Paracetamol: CWMP {
+        displayName = "take Paracetamol";
+        displayNameProgress = "Taking Paracetamol";
+        condition = "kap_pharma_enable_paracetamol";
+        items[] = {"kap_Paracetamol"};
+        callbackSuccess = "pharma_fnc_KAP_Paracetamol";
+        treatmentTime = "kap_pharma_treatment_time_paracetamol";
+        medicRequired = "kap_pharma_treatment_level_paracetamol";
+    };
     
 };

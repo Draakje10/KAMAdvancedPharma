@@ -70,5 +70,39 @@ class ACE_Medical_Treatment {
             onOverDose = "";
             opioidEffect = 0.17;
         };
+
+        class KAP_Vicodin
+        {
+            painReduce = 0.4;
+            hrIncreaseLow[] = {0, -5};
+            hrIncreaseNormal[] = {0, -5};
+            hrIncreaseHigh[] = {0, -5};
+            timeInSystem = 1200;
+            timeTillMaxEffect = 45;
+            incompatibleMedication[] = {};
+            viscosityChange = -5;
+            maxRelief = 0.5;
+            maxDose = 5;
+            maxDoseDeviation = 5;
+            dose = 1;
+            onOverDose = "";
+        };
+
+        class KAP_Paracetamol
+        {
+            painReduce = 0.1;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 30;
+            timeTillMaxEffect = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            maxRelief = 0.4;
+            maxDose = 20;
+            maxDoseDeviation = 5;
+            dose = 1;
+            onOverDose = "";
+        };
     };
 };

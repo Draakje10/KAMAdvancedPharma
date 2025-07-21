@@ -157,3 +157,72 @@
     1,
     {}
 ] call CBA_fnc_addSetting;
+
+
+// Vicodin settings
+[
+    "kap_pharma_enable_vicodin",
+    "CHECKBOX",
+    ["Enable Vicodin",
+    "Turns of usage of Vicodin."],
+    ["KAP - Pharma", "Vicodin"],
+    [true, false],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_time_vicodin",
+    "SLIDER",
+    ["Vicodin Treatment Time", 
+    "Set the treatment time for using Vicodin (in seconds)."],
+    ["KAP - Pharma", "Vicodin"],
+    [0.1, 10, 5, 1],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_level_vicodin",
+    "LIST",
+    ["Vicodin Treatment Level",
+    "Set the treatment level for using Vicodin."],
+    ["KAP - Pharma", "Vicodin"],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 1],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+// Paracetamol
+[
+    "kap_pharma_enable_paracetamol",
+    "CHECKBOX",
+    ["Enable Paracetamol",
+    "Turns of usage of Paracetamol."],
+    ["KAP - Pharma", "Paracetamol"],
+    [true, false],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_time_paracetamol",
+    "SLIDER",
+    ["Paracetamol Treatment Time", 
+    "Set the treatment time for using Paracetamol (in seconds)."],
+    ["KAP - Pharma", "Paracetamol"],
+    [0.1, 10, 5, 1],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_level_paracetamol",
+    "LIST",
+    ["Paracetamol Treatment Level",
+    "Set the treatment level for using Paracetamol."],
+    ["KAP - Pharma", "Paracetamol"],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 0],
+    1,
+    {}
+] call CBA_fnc_addSetting;
