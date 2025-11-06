@@ -10,7 +10,7 @@
 - Paracetamol
 - Vicodin
 
-[Documentation for usage](https://docs.google.com/document/d/1cqslDVvLoVafwZYqcYdOLiEZ9zRjAgiMFGz4ItmjA80/edit?usp=sharing)
+[Documentation for usage](https://github.com/Draakje10/KAMAdvancedPharma/wiki#-pages)
 
 [Discord](https://discord.gg/tTj9wgrnnX)
 
