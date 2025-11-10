@@ -24,6 +24,7 @@ class CfgPatches {
             "ace_medical_vitals",
             "ace_dogtags"
         };
+        requiredVersion = 1.62;
     };
 };
 

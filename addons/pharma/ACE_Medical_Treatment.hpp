@@ -44,6 +44,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {-40, -55};
             timeInSystem = 300;
             timeTillMaxEffect = 15;
+            incompatibleMedication[] = {"Morphine"};
             viscosityChange = 100;
             maxRelief = 0.5;
             maxDose = 4;
@@ -101,6 +102,23 @@ class ACE_Medical_Treatment {
             maxRelief = 0.4;
             maxDose = 20;
             maxDoseDeviation = 5;
+            dose = 1;
+            onOverDose = "";
+        };
+
+        class KAP_Diamox
+        {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 600;
+            timeTillMaxEffect = 0;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            maxRelief = 0;
+            maxDose = 5;
+            maxDoseDeviation = 2;
             dose = 1;
             onOverDose = "";
         };

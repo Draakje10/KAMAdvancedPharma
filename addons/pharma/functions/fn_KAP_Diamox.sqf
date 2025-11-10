@@ -9,9 +9,8 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 [_patient] spawn {
     params ["_patient"];
-    _sleepTime = ["kap_pharma_kill_time_Cyanide"] call CBA_settings_fnc_get;
-    sleep _sleepTime;
-    if (_patient getVariable ["ACE_isUnconscious", false]) then {
-        [_patient, 1] call ace_medical_engine_fnc_setStructuralDamage;
-    }
+    _BloodGas = _patient getVariable "kat_circulation_BloodGas";
+    _PAO2 = _BloodGas select 1;
+    _newPAO2 = _PAO2 + 20;
+    _patient setVariable ["kat_circulation_BloodGas", [_BloodGas select 0, _newPAO2, _BloodGas select 2, _BloodGas select 3], true];
 };

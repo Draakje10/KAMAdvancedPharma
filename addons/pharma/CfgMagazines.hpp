@@ -53,5 +53,4 @@ class CfgMagazines
         ACE_isMedicalItem = 1;
         ace_asItem = 1;	
     };
-
 };
