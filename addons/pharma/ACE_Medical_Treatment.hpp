@@ -108,7 +108,15 @@ class ACE_Medical_Treatment {
 
         class KAP_Diamox
         {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
             timeInSystem = 600;
+            timeTillMaxEffect = 0;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            maxRelief = 0;
             maxDose = 5;
             maxDoseDeviation = 2;
             dose = 1;

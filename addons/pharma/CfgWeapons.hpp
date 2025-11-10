@@ -43,7 +43,7 @@ class CfgWeapons {
         displayName = "Diamox";
         picture = "\kap_pharma\models\icons\diamox.paa";
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = "spO2 booster";
+        descriptionShort = "SpO2 booster";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;

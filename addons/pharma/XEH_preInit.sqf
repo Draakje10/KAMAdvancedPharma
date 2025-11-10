@@ -227,7 +227,7 @@
     {}
 ] call CBA_fnc_addSetting;
 
-// Diamox 
+// Diamox
 [
     "kap_pharma_enable_diamox",
     "CHECKBOX",
