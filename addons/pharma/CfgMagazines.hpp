@@ -54,7 +54,7 @@ class CfgMagazines
         ace_asItem = 1;	
     };
 
-    class KAP_Diamox: CA_Magazine 
+    class kap_Diamox: CA_Magazine 
     {
         author = "Draakje10";
         scope = 2;

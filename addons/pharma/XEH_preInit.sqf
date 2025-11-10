@@ -226,3 +226,37 @@
     1,
     {}
 ] call CBA_fnc_addSetting;
+
+// Diamox 
+[
+    "kap_pharma_enable_diamox",
+    "CHECKBOX",
+    ["Enable Diamox",
+    "Turns on usage of Diamox."],
+    ["KAP - Pharma", "Diamox"],
+    [true, false],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_time_diamox",
+    "SLIDER",
+    ["Diamox Treatment Time", 
+    "Set the treatment time for using Diamox (in seconds)."],
+    ["KAP - Pharma", "Diamox"],
+    [0.1, 10, 5, 1],
+    1,
+    {}
+] call CBA_fnc_addSetting;
+
+[
+    "kap_pharma_treatment_level_diamox",
+    "LIST",
+    ["Diamox Treatment Level",
+    "Set the treatment level for using Diamox."],
+    ["KAP - Pharma", "Diamox"],
+    [[0, 1, 2], ["Anyone", "Medic", "Doctor"], 1],
+    1,
+    {}
+] call CBA_fnc_addSetting;
