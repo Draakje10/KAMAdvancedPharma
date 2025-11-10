@@ -54,7 +54,8 @@ class CfgMagazines
         ace_asItem = 1;	
     };
 
-    class KAP_Diamox {
+    class KAP_Diamox: CA_Magazine 
+    {
         author = "Draakje10";
         scope = 2;
         displayName = "Diamox";
@@ -67,6 +68,6 @@ class CfgMagazines
         mass = 2;
         ACE_isMedicalItem = 1;
         ace_asItem = 1;
-    }
+    };
 
 };

@@ -76,6 +76,6 @@ class ACE_Medical_Treatment_Actions
         treatmentTime = "kap_pharma_treatment_time_diamox";
         medicRequired = "kap_pharma_treatment_level_diamox";
 
-    }
+    };
     
 };

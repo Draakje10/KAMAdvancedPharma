@@ -44,6 +44,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {-40, -55};
             timeInSystem = 300;
             timeTillMaxEffect = 15;
+            incompatibleMedication[] = {"Morphine"};
             viscosityChange = 100;
             maxRelief = 0.5;
             maxDose = 4;
