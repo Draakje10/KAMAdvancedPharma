@@ -106,19 +106,11 @@ class ACE_Medical_Treatment {
             onOverDose = "";
         };
 
-        class KAP_Diamox // TODO: adjust values
+        class KAP_Diamox
         {
-            painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 0;
-            timeTillMaxEffect = 0;
-            incompatibleMedication[] = {};
-            viscosityChange = 0;
-            maxRelief = 0;
-            maxDose = 0;
-            maxDoseDeviation = 0;
+            timeInSystem = 600;
+            maxDose = 5;
+            maxDoseDeviation = 2;
             dose = 1;
             onOverDose = "";
         };

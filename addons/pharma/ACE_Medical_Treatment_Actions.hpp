@@ -28,7 +28,7 @@ class ACE_Medical_Treatment_Actions
     };
 
     class KAP_Zagustin: Morphine {
-        displayName = "inject Zagustin";
+        displayName = "Inject Zagustin";
         displayNameProgress = "Injecting Zagustin";
         condition = "kap_pharma_enable_zagustin";
         items[] = {"kap_Zagustin"};
@@ -67,15 +67,14 @@ class ACE_Medical_Treatment_Actions
         medicRequired = "kap_pharma_treatment_level_paracetamol";
     };
 
-    class KAP_Diamox: CWMP { //TODO: add settings to preinit and make function
-        displayName = "Take Diamox";
-        displayNameProgress = "Taking Diamox";
+    class KAP_Diamox: Morphine {
+        displayName = "Inject Diamox";
+        displayNameProgress = "Injecting Diamox";
         condition = "kap_pharma_enable_diamox";
         items[] = {"kap_Diamox"};
         callbackSuccess = "pharma_fnc_KAP_Diamox";
         treatmentTime = "kap_pharma_treatment_time_diamox";
         medicRequired = "kap_pharma_treatment_level_diamox";
-
     };
     
 };

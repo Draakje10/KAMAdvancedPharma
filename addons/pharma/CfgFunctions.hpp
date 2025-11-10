@@ -10,6 +10,7 @@ class CfgFunctions
             class KAP_Meth {};
             class KAP_Vicodin {};
             class KAP_Paracetamol {};
+            class KAP_Diamox {};
         };
     };
     

@@ -37,4 +37,16 @@ class CfgWeapons {
             mass = 0.1;
         };
     };
+
+    class kap_Diamox: ACE_ItemCore {
+        scope = 2;
+        displayName = "Diamox";
+        picture = "\kap_pharma\models\icons\zagustin.paa";
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = "spO2 booster";
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.1;
+        };
+    };
 };
