@@ -9,16 +9,9 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 [_patient] spawn {
     params ["_patient"];
-
-    _heartrate = _patient getVariable ["ace_medical_vitals_heartRate", 0];
-    _anerobicPressure = _patient getVariable
-    _bloodGas = GET_BLOOD_GAS(_patient);
-    _temperature = 
-    _barometricPressure = 
-    _opioidDepression = 
-    _AceFatigue = 
-    _TimeSinceLastUpdate = 
-    _Sync = 
-
-    ["kat_vitals_fnc_handleOxygenFunction", [_patient, _heartrate, _anerobicPressure, _bloodGas, _temerature, _barometricPressure, _opioidDepression, _AceFatigue, _TimeSinceLastUpdate, _Sync]] call CBA_fnc_targetEvent;
+    _BloodGas = _patient getVariable "kat_circulation_BloodGas";
+    _SPO2 = _BloodGas select 2;
+    _SPO2 = _SPO2 + 10;
+    _BloodGas set [2, _SPO2];
+    _patient setVariable ["kat_circulation_BloodGas", _BloodGas, true];
 };
