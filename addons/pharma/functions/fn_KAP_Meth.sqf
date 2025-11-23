@@ -10,20 +10,37 @@ _currentPain = _patient getVariable "ACE_medical_pain";
 ["ace_medical_treatment_medicationLocal", [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 
 _timeInBody = ["kap_pharma_meth_time_in_body"] call CBA_settings_fnc_get;
+_startTime = CBA_StartTime;
 
-[_patient, _timeInBody, _currentPain] spawn {
-    params ["_patient", "_timeInBody", "_oldPain"];
+if (!local _patient ) then {
+    exit;
+} else {
+_pfhMeth = [
+    {
+        params ["_args", "_handle"];
+        _args = params ["_patient", "_startTime", "_timeInBody", "_currentPain"];
 
-    private _startTime = time;
-    while { time - _startTime < _timeInBody } do {
-        private _currentPain = _patient getVariable "ACE_medical_pain";
-        if (_currentPain > 0) then {
+        if (CBA_missionTime - _startTime >= _timeInBody) then {
+            _handle call CBA_fnc_removePerFrameHandler;
+        };
+
+        [{
+        params ["_patient", "_currentPain"];
+        [_patient, _currentPain / 2] call ace_medical_fnc_adjustPainLevel;
+        }, [_patient, _currentPain], 0] call CBA_fnc_waitAndExecute;
+
+        [{
+            params ["_patient", "_currentPain"];
+            [_patient, _currentPain] call ace_medical_fnc_adjustPainLevel;
+        }, [_patient, _currentPain], 10] call CBA_fnc_waitAndExecute;
+
+        _actualPain = _patient getVariable "ACE_medical_pain";
+
+        if (_actualPain >= 0) then {
             [_patient, -1] call ace_medical_fnc_adjustPainLevel;
         };
-        sleep 1;
-    };
-    [_patient, _oldPain / 2] call ace_medical_fnc_adjustPainLevel;
-    sleep 10;
-    [_patient, _oldPain] call ace_medical_fnc_adjustPainLevel;
 
+    },
+    1,
+[_patient, _startTime, _timeInBody, _currentPain]] call CBA_fnc_createPerFrameHandler; 
 };
