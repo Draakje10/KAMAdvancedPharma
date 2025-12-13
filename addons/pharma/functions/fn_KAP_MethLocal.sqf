@@ -7,8 +7,6 @@ _timeInBody = ["kap_pharma_meth_time_in_body"] call CBA_settings_fnc_get;
 _currentPain = _patient getVariable "ACE_medical_pain";
 _startTime = CBA_missionTime;
 
-diag_log format ["Meth Local effect function called for %1 seconds startime was %2 and missiontime was %3", _timeInBody, _startTime, CBA_missionTime];
-
 _pfhMeth = [
     {
         params ["_args", "_handle"];
@@ -19,12 +17,10 @@ _pfhMeth = [
         _actualPain = _patient getVariable "ACE_medical_pain";
 
         if (_actualPain >= 0) then {
-            diag_log format ["Removing pain %1", _actualPain];
             [_patient, -1] call ace_medical_fnc_adjustPainLevel;
         };
 
         if (CBA_missionTime - _startTime >= _timeInBody) then {
-            diag_log format ["Meth effect ended after %1 seconds startime was %2 and missiontime was %3", _timeInBody, _startTime, CBA_missionTime];
             _handle call CBA_fnc_removePerFrameHandler;
         };
 
