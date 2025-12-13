@@ -8,6 +8,7 @@ class CfgFunctions
             class KAP_Cyanide {};
             class KAP_Zagustin {};	
             class KAP_Meth {};
+            class KAP_MethLocal {};
             class KAP_Vicodin {};
             class KAP_Paracetamol {};
             class KAP_Diamox {};

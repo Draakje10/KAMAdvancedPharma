@@ -34,6 +34,12 @@ class Extended_PreInit_EventHandlers {
     };
 };
 
+class Extended_PostInit_EventHandlers {
+    class Pharma_postInit {
+        init = "call compile preprocessFileLineNumbers '\kap_pharma\XEG_postInit.sqf'";
+    };
+};
+
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgFunctions.hpp"
