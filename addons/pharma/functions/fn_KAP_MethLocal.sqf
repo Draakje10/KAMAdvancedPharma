@@ -39,6 +39,6 @@ _pfhMeth = [
         }, [_patient, _currentPain], 10] call CBA_fnc_waitAndExecute;
 
     },
-    1,
+    0,
     [_patient, _startTime, _timeInBody, _currentPain]
 ] call CBA_fnc_addPerFrameHandler; 
