@@ -2,6 +2,7 @@
 
 params ["_patient"];
 
+if (!local _patient) exitWith {};
 _timeInBody = ["kap_pharma_meth_time_in_body"] call CBA_settings_fnc_get;
 _currentPain = _patient getVariable "ACE_medical_pain";
 _startTime = CBA_missionTime;
@@ -39,4 +40,5 @@ _pfhMeth = [
 
     },
     1,
-[_patient, _startTime, _timeInBody, _currentPain]] call CBA_fnc_createPerFrameHandlerObject; 
+    [_patient, _startTime, _timeInBody, _currentPain]
+] call CBA_fnc_addPerFrameHandler; 
