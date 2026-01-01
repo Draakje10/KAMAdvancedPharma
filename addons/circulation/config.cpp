@@ -29,14 +29,14 @@ class CfgPatches {
 };
 
 class Extended_PreInit_EventHandlers {
-    class Pharma_preInit {
-        init = "call compile preprocessFileLineNumbers '\kap_pharma\XEH_preInit.sqf'";
+    class Circulation_preInit {
+        init = "call compile preprocessFileLineNumbers '\kap_circulation\XEH_preInit.sqf'";
     };
 };
 
 class Extended_PostInit_EventHandlers {
-    class Pharma_postInit {
-        init = "call compile preprocessFileLineNumbers '\kap_pharma\XEG_postInit.sqf'";
+    class Circulation_postInit {
+        init = "call compile preprocessFileLineNumbers '\kap_circulation\XEG_postInit.sqf'";
     };
 };
 
