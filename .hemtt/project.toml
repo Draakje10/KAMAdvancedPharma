@@ -15,3 +15,8 @@ minor = 6 # refers to the version of the mod in terms of whole features, new fea
 patch = 2 # refers to the version of the mod in terms of commits to make the version work
 build = 91 # how many times the mod has been built 
 git_hash = 4 # the hash of the last commit to the mod
+
+
+[lints.config.cfgpatches_scope]
+options.check_prefixes = ["circulation", "pharma"]
+options.check_cfgpatches = true
