@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 
-params ["_patient"];
+params ["_patient", "_bodypart", "_opioidRelief" ];
 
 if (!local _patient) exitWith {};
 _timeInBody = ["kap_pharma_meth_time_in_body"] call CBA_settings_fnc_get;
@@ -11,8 +11,6 @@ _pfhMeth = [
     {
         params ["_args", "_handle"];
         _args params ["_patient", "_startTime", "_timeInBody", "_currentPain"];
-
-        
 
         _actualPain = _patient getVariable "ACE_medical_pain";
 

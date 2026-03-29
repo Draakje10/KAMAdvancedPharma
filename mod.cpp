@@ -1,6 +1,6 @@
 name = "KAP - KAM Advanced Pharma";
 dir = "@KAP- KAM Advanced Pharma";
-actionName = "Steam"
+actionName = "Steam";
 action = "https://steamcommunity.com/sharedfiles/filedetails/?id=2971234567";
 picture = "KAPLogoHighRes.paa";
 logo = "KAPLogoLowRes.paa";
